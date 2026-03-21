@@ -1,0 +1,7 @@
+aid: aecom
+url: https://raw.githubusercontent.com/api-evangelist/aecom/refs/heads/main/apis.yml
+modified: '2026-03-21'
+apis: []
+common:
+  - type: Website
+    url: https://www.aecom.com
