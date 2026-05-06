@@ -1,135 +1,67 @@
 specification: FinOps Framework
 specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: AECOM
+providerId: aecom
+created: '2026-05-04'
+modified: '2026-05-05'
+reconciled: false
+notes: AECOM bills consulting/professional-services engagements rather than per-call API usage.
+tags:
+  - FinOps
+  - FOCUS
+  - Engineering
+  - Infrastructure
+description: 'FOCUS-aligned FinOps for AECOM: project-based consulting with optional digital
+  software components.'
+sources:
+  - https://digital.aecom.com/
 alignedWith:
   framework: FinOps Foundation Framework
   frameworkUrl: https://www.finops.org/framework/
   dataSpec: FOCUS
   dataSpecVersion: '1.3'
   dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
-provider: AECOM
-providerId: aecom
 publisherName: AECOM
-serviceCategory: API
-created: '2026-05-04'
-modified: '2026-05-04'
-tags:
-  - Engineering
-  - Infrastructure
-  - Construction
-  - Environmental Services
-  - Transportation
-  - FinOps
-  - Cost Management
-  - FOCUS
-description: FinOps framework definition for the AECOM API surface. Provides a FOCUS-aligned mapping for
-  cost allocation, usage measurement, and unit-economics reporting across the provider's APIs.
-principles:
-  - name: Visibility
-    description: Make API consumption costs visible to engineering, product, and finance teams in near
-      real-time.
-  - name: Allocation
-    description: Tag every chargeable API call with the consuming team, environment, application, and
-      feature so cost can be allocated.
-  - name: Optimization
-    description: Continuously evaluate request patterns, caching, batching, and tier selection to reduce
-      cost per useful unit of work.
-  - name: Accountability
-    description: Establish budget owners and chargeback or showback flows for each consuming team.
-domains:
-  - name: Understand Usage and Cost
-    capabilities:
-      - Data Ingestion
-      - Allocation
-      - Reporting and Analytics
-      - Anomaly Management
-  - name: Quantify Business Value
-    capabilities:
-      - Planning and Estimating
-      - Forecasting
-      - Budgeting
-      - Benchmarking
-      - Unit Economics
-  - name: Optimize Usage and Cost
-    capabilities:
-      - Architecting for Cloud
-      - Rate Optimization
-      - Workload Optimization
-      - Cloud Sustainability
-      - Licensing and SaaS
-  - name: Manage the FinOps Practice
-    capabilities:
-      - FinOps Practice Operations
-      - FinOps Education and Enablement
-      - Invoicing and Chargeback
-      - Onboarding Workloads
-      - Intersecting Disciplines
+serviceCategory: Engineering and Infrastructure Services
 billingModel:
-  pricingCategory: Usage-Based
-  billingFrequency: Monthly
+  pricingCategory: Subscription
+  billingFrequency: Per-Invoice
   billingCurrency: USD
   chargeCategories:
-    - Usage
     - Purchase
-    - Tax
-    - Credit
-    - Adjustment
-  chargeFrequency: Recurring
+    - Usage
 focusColumns:
   ServiceName: AECOM
-  ServiceCategory: Developer Tools / API
+  ServiceCategory: Engineering and Infrastructure Services
   ProviderName: AECOM
   PublisherName: AECOM
   InvoiceIssuerName: AECOM
-  PricingCategory: Usage-Based
-  PricingUnit: request
   BillingCurrency: USD
-  ChargeCategory: Usage
 meters:
-  - name: api_requests
-    description: Count of billable API requests
-    unit: request
+  - name: professional_services_hours
+    unit: hour
     aggregation: sum
     dimensions:
-      - api
-      - endpoint
-      - tier
-      - region
-      - consumer
-  - name: data_egress
-    description: Bytes returned over the network in API responses
-    unit: GB
+      - project
+      - role
+  - name: software_subscription
+    unit: month
     aggregation: sum
     dimensions:
-      - api
-      - region
-      - consumer
-  - name: compute_seconds
-    description: Server-side compute consumed by the request, where applicable
-    unit: second
-    aggregation: sum
+      - product
+  - name: project_milestones
+    unit: milestone
+    aggregation: count
     dimensions:
-      - api
-      - endpoint
-      - tier
-apis:
-  - name: AECOM PipeInsights API
-    baseURL: https://digital.aecom.com
-    tags:
-      - Water Infrastructure
-      - Sewer Inspection
-      - AI
-      - SaaS
-      - Digital
-    serviceName: AECOM PipeInsights API
-    serviceCategory: API
-unitEconomics:
-  - name: Cost per 1K Requests
-    metric: billed_cost / (api_requests / 1000)
-    target: TBD
-  - name: Cost per Active Consumer
-    metric: billed_cost / active_consumers
-    target: TBD
-maintainers:
-  - FN: API Evangelist
-    url: http://apievangelist.com
-    email: info@apievangelist.com
+      - project
+principles:
+  - name: Visibility
+    description: Reconcile AECOM invoices against project SOWs; track consultant-hour burn against
+      milestones.
+  - name: Allocation
+    description: Tag spend per project, business unit, and capital vs operating budget.
+  - name: Optimization
+    description: Right-size consulting team; renegotiate digital-product subscriptions at renewal.
+  - name: Accountability
+    description: Assign project owner; review monthly burn and re-baseline as scope shifts.
