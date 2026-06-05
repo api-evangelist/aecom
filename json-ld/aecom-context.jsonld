@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "aecom": "https://digital.aecom.com/vocab#",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "qudt": "http://qudt.org/schema/qudt/",
+
+    "Organization": "schema:Organization",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": {"@id": "schema:url", "@type": "@id"},
+    "image": {"@id": "schema:image", "@type": "@id"},
+    "industry": "schema:industry",
+    "areaServed": "schema:areaServed",
+    "knowsAbout": "schema:knowsAbout",
+    "hasOfferCatalog": "schema:hasOfferCatalog",
+    "serviceType": "schema:serviceType",
+
+    "PipeInsights": "aecom:PipeInsights",
+    "SewerInspection": "aecom:SewerInspection",
+    "DefectCoding": "aecom:DefectCoding",
+    "InfrastructureAsset": "aecom:InfrastructureAsset",
+    "RehabilitationStrategy": "aecom:RehabilitationStrategy",
+    "DigitalTwin": "aecom:DigitalTwin",
+    "AssetManagement": "aecom:AssetManagement",
+    "ConditionAssessment": "aecom:ConditionAssessment",
+    "WaterInfrastructure": "aecom:WaterInfrastructure",
+    "EnvironmentalData": "aecom:EnvironmentalData",
+
+    "defectCode": {"@id": "aecom:defectCode", "@type": "xsd:string"},
+    "severity": {"@id": "aecom:severity", "@type": "xsd:string"},
+    "confidence": {"@id": "aecom:confidence", "@type": "xsd:decimal"},
+    "inspectionDate": {"@id": "aecom:inspectionDate", "@type": "xsd:date"},
+    "pipeSegmentId": {"@id": "aecom:pipeSegmentId", "@type": "xsd:string"},
+    "assetClass": {"@id": "aecom:assetClass", "@type": "xsd:string"},
+    "coordinates": {"@id": "geo:hasGeometry"},
+    "remediationPriority": {"@id": "aecom:remediationPriority", "@type": "xsd:integer"},
+    "annualRiskScore": {"@id": "aecom:annualRiskScore", "@type": "xsd:decimal"},
+
+    "SoftwareApplication": "schema:SoftwareApplication",
+    "applicationCategory": "schema:applicationCategory",
+    "operatingSystem": "schema:operatingSystem",
+    "offers": "schema:offers",
+    "provider": {"@id": "schema:provider", "@type": "@id"},
+    "featureList": "schema:featureList",
+
+    "AECOM": {
+      "@id": "https://www.aecom.com",
+      "@type": "schema:Organization",
+      "schema:name": "AECOM",
+      "schema:url": "https://www.aecom.com",
+      "schema:industry": "Infrastructure Engineering & Consulting",
+      "schema:areaServed": "Worldwide"
+    }
+  }
+}

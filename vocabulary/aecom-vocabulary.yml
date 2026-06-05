@@ -1,0 +1,164 @@
+vocabulary:
+  name: AECOM Infrastructure & Digital Platform Vocabulary
+  description: >-
+    Key terms covering the industrial, engineering, and digital infrastructure
+    concepts used by AECOM across its consulting services and SaaS platforms,
+    including PipeInsights, program management, environmental intelligence,
+    and infrastructure analytics.
+  version: "1.0.0"
+  terms:
+
+    - term: PipeInsights
+      definition: >-
+        AECOM's cloud-based SaaS platform for AI-powered sewer inspection analysis,
+        enabling automated defect coding, QA/QC workflows, and rehabilitation
+        strategy generation from CCTV sewer inspection video footage.
+      tags:
+        - water-infrastructure
+        - ai
+        - saas
+        - sewer-inspection
+
+    - term: Sewer Inspection
+      definition: >-
+        The process of examining sewer pipe interiors using closed-circuit television
+        (CCTV) cameras to assess structural condition, identify defects, and determine
+        maintenance or rehabilitation needs according to standards such as NASSCO PACP.
+      tags:
+        - water-infrastructure
+        - asset-management
+        - cctv
+
+    - term: Defect Coding
+      definition: >-
+        The classification of pipe defects observed during sewer inspection using
+        standardized coding systems (e.g., NASSCO PACP/LACP/MACP) that describe
+        defect type, severity, and location to enable condition scoring and prioritization.
+      tags:
+        - water-infrastructure
+        - sewer-inspection
+        - standards
+
+    - term: Infrastructure Asset Management
+      definition: >-
+        A systematic process for maintaining, upgrading, and operating physical
+        infrastructure assets cost-effectively, balancing performance, risk, and cost
+        over the full asset lifecycle; often supported by digital twin and analytics tools.
+      tags:
+        - asset-management
+        - infrastructure
+        - lifecycle
+
+    - term: Digital Twin
+      definition: >-
+        A virtual representation of a physical infrastructure system—such as a water
+        network or transportation corridor—that integrates real-time sensor data,
+        historical records, and simulation models to support operational decisions and
+        predictive maintenance.
+      tags:
+        - digital-twin
+        - iot
+        - simulation
+        - water-infrastructure
+
+    - term: Rehabilitation Strategy
+      definition: >-
+        A data-driven plan for repairing, renewing, or replacing infrastructure assets
+        based on condition assessment results, risk scores, remaining useful life estimates,
+        and available budget, often produced by analytics platforms such as PipeInsights.
+      tags:
+        - asset-management
+        - water-infrastructure
+        - capital-planning
+
+    - term: BIM (Building Information Modeling)
+      definition: >-
+        A digital process for creating and managing information about a built asset
+        throughout its lifecycle, using 3D models enriched with data about geometry,
+        materials, systems, and schedules to support design, construction, and operations.
+      tags:
+        - bim
+        - design
+        - construction
+        - digital-delivery
+
+    - term: Environmental Remediation
+      definition: >-
+        The process of removing or neutralizing contaminants from soil, groundwater,
+        or surface water at polluted sites to reduce risk to human health and the
+        environment, tracked and managed through digital environmental data platforms.
+      tags:
+        - environment
+        - remediation
+        - contamination
+
+    - term: Program Management
+      definition: >-
+        The coordinated management of multiple related projects, contracts, and resources
+        to achieve strategic objectives and benefits for large infrastructure programs,
+        supported by digital dashboards providing real-time portfolio visibility.
+      tags:
+        - program-management
+        - infrastructure
+        - project-delivery
+
+    - term: GIS (Geographic Information System)
+      definition: >-
+        A system for capturing, storing, analyzing, and displaying geographically
+        referenced data about infrastructure assets, environmental conditions, and
+        service territories; commonly integrated with asset management and design tools.
+      tags:
+        - gis
+        - spatial-data
+        - mapping
+
+    - term: NASSCO PACP
+      definition: >-
+        Pipeline Assessment and Certification Program, a North American standardized
+        system developed by the National Association of Sewer Service Companies for
+        rating and coding the condition of sewer pipelines from CCTV inspection data.
+      tags:
+        - standards
+        - sewer-inspection
+        - water-infrastructure
+
+    - term: Condition Assessment
+      definition: >-
+        A systematic evaluation of the physical state and remaining service life of
+        infrastructure assets using inspection data, sensor readings, and analytical
+        models to inform maintenance and capital investment decisions.
+      tags:
+        - asset-management
+        - inspection
+        - infrastructure
+
+    - term: Energy Transition
+      definition: >-
+        The global shift from fossil fuel-based energy systems to renewable and
+        low-carbon alternatives, supported by infrastructure engineering services
+        for power generation, transmission, distribution, and storage projects.
+      tags:
+        - energy
+        - sustainability
+        - renewables
+
+    - term: Stormwater Management
+      definition: >-
+        Engineering and operational practices for controlling urban runoff, reducing
+        flooding, preventing water quality degradation, and complying with regulatory
+        discharge permits, often integrated with water infrastructure digital platforms.
+      tags:
+        - water-infrastructure
+        - environment
+        - urban
+
+    - term: Infrastructure Analytics
+      definition: >-
+        Data analytics and visualization capabilities applied to infrastructure asset
+        portfolios to identify trends, forecast failures, optimize maintenance scheduling,
+        and support capital planning decisions through dashboards and predictive models.
+      tags:
+        - analytics
+        - data
+        - asset-management
+        - infrastructure
