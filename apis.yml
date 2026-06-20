@@ -8,7 +8,7 @@ tags:
   - Environmental Services
   - Transportation
   - Fortune 500
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 created: '2026-03-21'
 modified: '2026-04-19'
 description: >-
@@ -32,7 +32,7 @@ apis:
       - AI
       - SaaS
       - Digital
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://digital.aecom.com
     humanURL: https://digital.aecom.com/pipeinsights
     description: >-
