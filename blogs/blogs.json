@@ -2,13 +2,20 @@
   "repo": "aecom",
   "feeds": [
     {
-      "source": "https://www.aecom.com/insights/",
+      "source": "https://www.aecom.com/blog/feed/",
       "feed_url": "https://www.aecom.com/blog/feed/",
-      "title": "AECOM",
+      "title": "",
       "saved": 0,
       "method": "feed"
+    },
+    {
+      "source": "https://www.aecom.com/insights/",
+      "feed_url": "https://www.aecom.com/insights/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
     }
   ],
   "post_count": 15,
-  "fetched": "2026-06-21T17:00:00Z"
+  "fetched": "2026-06-27T12:03:07Z"
 }
