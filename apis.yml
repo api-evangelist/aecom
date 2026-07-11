@@ -48,6 +48,8 @@ apis:
       - url: https://azuremarketplace.microsoft.com/en-us/marketplace/apps/aecom.pipeinsights
         type: Marketplace
 common:
+  - type: DomainSecurity
+    url: security/aecom-domain-security.yml
   - url: https://www.aecom.com
     type: Portal
   - url: https://www.aecom.com/services/

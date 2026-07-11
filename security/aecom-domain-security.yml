@@ -1,0 +1,28 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.aecom.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 26 19:55:59 2026 GMT
+  hsts: true
+  hsts_max_age: 300
+- host: digital.aecom.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec  6 23:59:59 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: investors.aecom.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  5 20:19:13 2026 GMT
+  hsts: null
+domains:
+- domain: aecom.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
