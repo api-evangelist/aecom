@@ -30,7 +30,7 @@ description: >-
   in over 150 countries and is listed on the NYSE as ACM. The firm serves governments,
   businesses, and organizations worldwide, delivering integrated lifecycle solutions
   from advisory and design through construction and operations.
-specificationVersion: '0.16'
+specificationVersion: '0.23'
 maintainers:
   - FN: API Evangelist
     url: http://apievangelist.com
