@@ -41,6 +41,12 @@ apis:
     tags:
       - Water Infrastructure
       - Sewer Inspection
+      - Artificial Intelligence
+      - Software-as-a-Service
+      - Digital
+    tags_raw:
+      - Water Infrastructure
+      - Sewer Inspection
       - AI
       - SaaS
       - Digital
