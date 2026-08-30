@@ -1,0 +1,92 @@
+generated: '2026-08-30'
+method: probed
+source: live HTTPS probes of every apis.yml host (baseURL, humanURL, common[] pointers)
+description: >-
+  Results of probing the /.well-known/ discovery surface for every AECOM host in
+  apis.yml plus the two additional AECOM-operated hosts found during this pass
+  (insights.aecom.com, the corporate apex aecom.com). Status is the HTTP code
+  observed at fetch time on 2026-08-30. NO path returned a real document on any
+  host: aecom.com/www.aecom.com answer 404 with the WordPress theme's HTML 404
+  page, digital.aecom.com answers 404 with a Gatsby SPA error shell, and
+  insights.aecom.com answers 404 with a Vercel/Next.js shell. Nothing was saved
+  and NO WellKnown pointer is emitted, because AECOM serves no /.well-known/
+  document. The one machine-readable discovery file AECOM does serve is
+  https://insights.aecom.com/llms.txt (200, text/markdown) — captured separately
+  in llms/aecom-llms.txt.
+hosts:
+  - host: https://digital.aecom.com
+    note: apis.yml baseURL for the AECOM PipeInsights API entry; Gatsby 5 static site.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+  - host: https://www.aecom.com
+    note: Corporate site (WordPress); redirects to the apex https://aecom.com.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+  - host: https://aecom.com
+    note: Corporate apex.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+  - host: https://insights.aecom.com
+    note: >-
+      AECOM Insights editorial site (Vercel/Next.js). Serves a real llms.txt but
+      no /.well-known/ document.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+  - host: https://investors.aecom.com
+    note: Investor relations site (Q4 Inc. hosted).
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+  - host: https://api.aecom.com
+    note: >-
+      Probed as the conventional API host for this domain. DNS NXDOMAIN — the
+      host does not exist. Same for developer.aecom.com, developers.aecom.com,
+      docs.aecom.com, api.digital.aecom.com and mcp.aecom.com.
+    documents:
+      - path: /openapi.json
+        status: 0
+        error: DNS NXDOMAIN

@@ -1,0 +1,58 @@
+generated: '2026-08-30'
+method: searched
+source: https://registry.npmjs.org/-/v1/search?text=aecom
+description: >-
+  Client libraries and published packages attributable to AECOM. AECOM publishes
+  no API client SDK, because it publishes no public API. What the public
+  registries do carry are two npm packages published from @aecom.com maintainer
+  accounts by AECOM engineering staff — a Vue map component from AECOM's
+  Canadian geomatics team and an empty scope-reservation package. Both are
+  recorded here as first-party (the maintainer email domain is aecom.com), but
+  NEITHER is an API SDK, so no `SDKs` pointer is emitted in apis.yml. PyPI,
+  RubyGems, crates.io, NuGet, Maven Central and pkg.go.dev carry no AECOM
+  first-party package; there is no `aecom` GitHub organization (api.github.com
+  /orgs/aecom returns 404).
+registries_checked:
+  - registry: npm
+    status: 200
+    result: 2 packages with aecom.com maintainer emails
+  - registry: pypi
+    status: 404
+    result: no package named aecom
+  - registry: github-org
+    url: https://api.github.com/orgs/aecom
+    status: 404
+    result: no AECOM GitHub organization
+packages:
+  - language: javascript
+    registry: npm
+    name: aecom-vue-map-component
+    url: https://www.npmjs.com/package/aecom-vue-map-component
+    install: npm install aecom-vue-map-component
+    official: true
+    official_basis: >-
+      npm maintainers are etienne.deschenes@aecom.com (account aecom-geomatique)
+      and jean-eric.baribeau@aecom.com — AECOM's Quebec geomatics practice.
+    version: 0.0.68
+    published: '2023-06-15'
+    kind: ui-component
+    note: >-
+      A Vue map component, not an API client. No repository, homepage or license
+      declared on the package. Last release 2023-06-15 — over three years stale
+      as of this pass.
+  - language: javascript
+    registry: npm
+    name: "@code-aecom/atom-gk"
+    url: https://www.npmjs.com/package/@code-aecom/atom-gk
+    install: npm install @code-aecom/atom-gk
+    official: true
+    official_basis: >-
+      npm maintainers are peggy.lin@aecom.com and cesare.caoduro@aecom.com under
+      the @code-aecom scope.
+    version: 0.0.0
+    published: '2024-08-29'
+    kind: placeholder
+    note: >-
+      Version 0.0.0 with no description, repository or homepage — a scope/name
+      reservation rather than a shipped library. Recorded for completeness, not
+      as a usable client.

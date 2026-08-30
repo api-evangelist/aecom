@@ -4,41 +4,39 @@ schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main
 provider: AECOM
 providerId: aecom
 created: '2026-05-04'
-# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
-# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
-method: generated
-modified: '2026-05-05'
-reconciled: false
-notes: AECOM does not publish a public developer API or self-service pricing. AECOM Digital
-  delivers consulting and bespoke software (e.g. PipeInsights) to clients under contract;
-  there is no API marketplace or per-call price list.
+modified: '2026-08-30'
+generated: '2026-08-30'
+method: searched
+source: https://digital.aecom.com/products/
+reconciled: true
+plan_count: 0
 tags:
   - Engineering
   - Infrastructure
   - Construction
-description: AECOM does not expose self-service developer APIs with published pricing. Digital
-  products such as PipeInsights are sold as consulting-led engagements to infrastructure clients,
-  with pricing negotiated per project.
+description: >-
+  AECOM publishes no plans, tiers or prices of any kind. Searched on 2026-08-30:
+  the Digital AECOM products index (https://digital.aecom.com/products/, HTTP 200)
+  and each product page — pipe.insights, plan.engage, eco.uplift
+  (https://digital.aecom.com/product/pipeinsights/, HTTP 200) — carry no pricing,
+  no tier table, no "plans" section and no sign-up. Every product routes to a
+  contact form. AECOM is a professional-services firm: its digital products are
+  sold inside consulting engagements and priced per contract, and the former
+  Microsoft Azure Marketplace transactable listing for PipeInsights now returns
+  404. Recorded as plan_count 0 rather than omitted, because an absence of
+  published pricing is the measurement.
+notes: >-
+  Supersedes the 2026-05-04 bulk-sweep version of this file, which asserted a
+  synthetic "Consulting Engagement" plan that AECOM does not publish. Replaced
+  with the probed zero. No self-service pricing exists to record.
 sources:
-  - https://digital.aecom.com/
-plans:
-  - id: aecom-engagement
-    name: Consulting Engagement
-    type: enterprise
-    description: Bespoke digital and engineering engagement; software access and pricing per
-      contract.
-    entries:
-      - label: Project contract
-        name: custom
-        type: subscription
-        metric: contract
-        limit: -1
-        timeFrame: month
-        geo: global
-        unit: 1
-        price: contact sales
-        userMultiplied: false
-    elements:
-      - name: PipeInsights or other AECOM Digital products
-      - name: Domain consulting team
-      - name: Custom SLA
+  - url: https://digital.aecom.com/products/
+    status: 200
+  - url: https://digital.aecom.com/product/pipeinsights/
+    status: 200
+  - url: https://digital.aecom.com/product/planengage/
+    status: 200
+  - url: https://marketplace.microsoft.com/en-us/product/aecom1648130425866.pipeinsights
+    status: 404
+    note: Former Azure Marketplace transactable listing for PipeInsights; now delisted.
+plans: []

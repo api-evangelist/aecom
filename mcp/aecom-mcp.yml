@@ -1,0 +1,26 @@
+generated: '2026-08-30'
+method: searched
+source: >-
+  Live probes of digital.aecom.com, aecom.com, insights.aecom.com and DNS lookups
+  for mcp.aecom.com / api.aecom.com, plus web search for an AECOM MCP server.
+description: >-
+  AECOM ships no Model Context Protocol server, hosted or local. mcp.aecom.com
+  does not resolve (NXDOMAIN); no npm or PyPI package under an AECOM account
+  provides one; no AECOM documentation mentions MCP. No candidate tool list was
+  derived either, because AECOM publishes no OpenAPI to derive operations from —
+  a derived tool list here would be invention, not derivation.
+status: none
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+evidence:
+  - check: DNS mcp.aecom.com
+    result: NXDOMAIN
+  - check: DNS api.aecom.com
+    result: NXDOMAIN
+  - check: npm registry search "aecom"
+    result: 2 packages, neither an MCP server
+  - check: OpenAPI available to derive candidate tools from
+    result: none
+tools: []

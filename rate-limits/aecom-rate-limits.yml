@@ -4,29 +4,32 @@ schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main
 provider: AECOM
 providerId: aecom
 created: '2026-05-04'
-# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
-# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
-method: generated
-modified: '2026-05-05'
-reconciled: false
-notes: No publicly documented API rate limits. AECOM software is engagement-delivered.
+modified: '2026-08-30'
+generated: '2026-08-30'
+method: searched
+source: https://digital.aecom.com/products/
+reconciled: true
+limit_count: 0
 tags:
   - Rate Limiting
   - Engineering
-description: AECOM does not publish public rate-limit documentation; any limits are governed
-  by per-engagement deployment terms.
+description: >-
+  AECOM documents no rate limits, because AECOM documents no API. Searched on
+  2026-08-30 across digital.aecom.com (products and product pages), aecom.com and
+  insights.aecom.com: there is no developer portal, no API reference and no
+  published throttling policy. No response headers were observed either — there
+  is no unauthenticated AECOM API endpoint to observe them on (api.aecom.com,
+  developer.aecom.com and docs.aecom.com are all DNS NXDOMAIN).
+notes: >-
+  Supersedes the 2026-05-04 bulk-sweep version of this file, which asserted an
+  "Engagement-scoped limit" and a 429/503 response-code contract that AECOM has
+  never published and that was never observed on a live response. Both claims are
+  removed; the honest record is a zero.
 sources:
-  - https://digital.aecom.com/
-responseCodes:
-  throttled: 429
-  serviceUnavailable: 503
-limits:
-  - name: Engagement-scoped limit
-    scope: account
-    metric: varies
-    limit: see engagement contract
-policies:
-  - name: Engagement-scoped
-    description: Limits governed by the consulting/deployment contract.
-  - name: Backoff
-    description: Honor Retry-After; use exponential backoff with jitter.
+  - url: https://digital.aecom.com/products/
+    status: 200
+  - url: https://digital.aecom.com/openapi.json
+    status: 404
+headers: []
+limits: []
+policies: []
