@@ -1,17 +1,17 @@
 ---
 kin_checks:
   slug: aecom
-  schema_version: 0.17.2
-  scored_at: '2026-09-01'
-  run_ts: 2026-09-01T063623
+  schema_version: 0.18.2
+  scored_at: '2026-09-04'
+  run_ts: 2026-09-04T062714
   note: Actionable checks only (missed + partial). earned/na are every other check
-    in rubric/scoring-0.17.2.yml; counts below let you verify that.
+    in rubric/scoring-0.18.2.yml; counts below let you verify that.
   counts:
-    total: 130
+    total: 132
     earned: 22
-    partial: 2
-    missed: 64
-    na: 42
+    partial: 1
+    missed: 65
+    na: 44
   checks:
   - id: multiple_apis
     status: missed
@@ -113,6 +113,8 @@ kin_checks:
     status: missed
   - id: reversibility_documented
     status: missed
+  - id: mcp_server
+    status: missed
   - id: auth_clarity
     status: missed
   - id: idempotency
@@ -141,10 +143,6 @@ kin_checks:
     status: missed
   - id: agentic_commerce
     status: missed
-  - id: mcp_server
-    status: partial
-    earned: 4.8
-    detail: 'grade: documented'
   - id: rate_limit_signal
     status: partial
     earned: 3.5
