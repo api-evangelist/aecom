@@ -1,7 +1,9 @@
 ---
 title: AI TOOL LAUNCHED TO PROTECT NATURE DURING ...
 url: https://www.prnewswire.com/in/news-releases/ai-tool-launched-to-protect-nature-during-infrastructure-development-302259094.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"AECOM" press release artificial intelligence'
 position: 5
 source: serpapi-google

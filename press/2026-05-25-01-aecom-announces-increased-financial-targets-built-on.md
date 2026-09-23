@@ -1,7 +1,9 @@
 ---
 title: AECOM announces increased financial targets built on ...
 url: https://investors.aecom.com/news-releases/news-release-details/aecom-announces-increased-financial-targets-built-further
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"AECOM" press release artificial intelligence'
 position: 1
 source: serpapi-google

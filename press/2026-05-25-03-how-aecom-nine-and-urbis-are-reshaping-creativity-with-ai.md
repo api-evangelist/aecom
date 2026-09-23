@@ -1,7 +1,9 @@
 ---
 title: How AECOM, Nine and Urbis are reshaping creativity with AI
 url: https://blog.adobe.com/en/publish/2025/07/17/how-aecom-nine-and-urbis-are-reshaping-creativity-with-ai
-date: '2026-05-25'
+published: '2025-07-17'
+date_basis: url-derived
+harvested: '2026-05-25'
 query: '"AECOM" press release artificial intelligence'
 position: 3
 source: serpapi-google

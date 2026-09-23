@@ -1,7 +1,9 @@
 ---
 title: Aecom earnings on deck as AI strategy faces investor test
 url: https://www.investing.com/news/earnings/aecom-earnings-on-deck-as-ai-strategy-faces-investor-test-93CH-4494573
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"AECOM" press release artificial intelligence'
 position: 4
 source: serpapi-google
