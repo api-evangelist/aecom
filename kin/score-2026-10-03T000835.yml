@@ -1,30 +1,28 @@
-# Kin Score artifact — aecom — 2026-09-01T063623
+# Kin Score artifact — aecom — 2026-10-03T000835
 # The API Evangelist rating (https://github.com/api-evangelist/kin-score). Generated; do not edit.
 ---
 kin_score:
   slug: aecom
-  schema_version: 0.17.2
-  scored_at: '2026-09-01'
-  run_ts: 2026-09-01T063623
-  composite: 21.3
+  schema_version: 0.23.0
+  scored_at: '2026-10-03'
+  run_ts: 2026-10-03T000835
+  composite: 21.5
   band: emerging
   facets:
-    discoverability: 75.9
+    discoverability: 73.2
     contract_quality: 14.7
-    governance: 0.0
+    contract_governance: 0.0
     operational_transparency: 0.0
     developer_ergonomics: 21.4
-    commercial_clarity: 28.9
-    contract_governance: 0.0
     access_clarity: 28.9
   agent_readiness:
-    score: 6.0
-    band: agent-aware
+    score: 2.5
+    band: human-only
     dimensions:
       spec_presence: false
       agentic_access: false
       reversibility_documented: false
-      mcp_server: documented
+      mcp_server: false
       auth_clarity: false
       idempotency: false
       error_semantics: false
@@ -40,11 +38,11 @@ kin_score:
       protected_resource_metadata: false
       dynamic_client_registration: false
       agentic_commerce: false
-  needs_work:
-    owner: catalog
-    reasons:
-    - owner: catalog
-      reason: no_resolvable_host
-    detected: '2026-08-18'
-    note: Recorded so this provider's gaps can be attributed. Does not affect the
-      composite.
+  regulatory:
+    applies: true
+    regime: Horizontal (data, software, accessibility, platform)
+    regime_id: horizontal
+    score: 18.6
+    matched_via: fallback
+  provenance:
+    mcp: derived
