@@ -75,6 +75,8 @@ apis:
       - url: https://digital.aecom.com/product/pipeinsights/
         type: Documentation
 common:
+  - type: FinOps
+    url: finops/aecom-finops.yml
   - type: Website
     url: https://aecom.com/
   - type: DomainSecurity
