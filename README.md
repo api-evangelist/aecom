@@ -1,4 +1,4 @@
-# AECOM (aecom)
+# AECOM
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,95 +66,115 @@
 
 AECOM is a global infrastructure consulting firm providing professional services across planning, design, engineering, program management, and construction management for clients in transportation, water, energy, and the environment. AECOM operates in over 150 countries and is listed on the NYSE as ACM. The firm serves governments, businesses, and organizations worldwide, delivering integrated lifecycle solutions from advisory and design through construction and operations.
 
-**URL:** [https://www.aecom.com](https://www.aecom.com)
+**Areas:** Engineering · Infrastructure · Construction · Environmental Services · Transportation · Fortune 500
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## AECOM on APIs.io
 
-## Tags
+Everything profiled for AECOM is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/aecom/](https://apis.io/providers/aecom/)** — or go straight to one of the APIs or properties below.
 
-- Engineering
-- Infrastructure
-- Construction
-- Environmental Services
-- Transportation
+### APIs (1)
 
-## Timestamps
+- [AECOM PipeInsights API](https://apis.io/apis/aecom/aecom-pipeinsights-api/) — PipeInsights is AECOM's cloud-based SaaS solution for AI-powered sewer inspection analysis. It enables municipalities and utilities to upload sewer…
 
-- **Created:** 2026-03-21
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### AECOM PipeInsights API
+#### JSON-LD (1)
 
-PipeInsights is AECOM's cloud-based SaaS solution for AI-powered sewer inspection analysis. It enables municipalities and utilities to upload sewer inspection footage, perform QA/QC defect coding, automate defect detection using machine learning, visualize infrastructure health, and generate rehabilitation strategy recommendations. Available on the Microsoft Azure Marketplace.
+Linked-data contexts for the provider's vocabulary.
 
-**Human URL:** [https://digital.aecom.com/pipeinsights](https://digital.aecom.com/pipeinsights)
+- [Aecom Context](https://apis.io/jsonld/aecom/aecom-context/)
 
-#### Tags
+#### Vocabulary (1)
 
-- Water Infrastructure, Sewer Inspection, AI, SaaS, Digital
+The provider's domain terms, defined.
 
-#### Properties
+- [AECOM Infrastructure & Digital Platform Vocabulary](https://apis.io/vocabularies/aecom/aecom-vocabulary/)
 
-- [Documentation](https://digital.aecom.com/pipeinsights)
-- [Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/aecom.pipeinsights)
+#### Security (1)
 
-## Common Properties
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Portal](https://www.aecom.com)
-- [Services Documentation](https://www.aecom.com/services/)
-- [Digital AECOM](https://digital.aecom.com)
-- [Blog / Insights](https://www.aecom.com/insights/)
-- [Careers](https://www.aecom.com/careers/)
-- [Terms of Service](https://www.aecom.com/legal/terms-of-use/)
-- [Privacy Policy](https://www.aecom.com/legal/privacy-policy/)
-- [Investor Relations](https://investors.aecom.com)
-- [Contact](https://www.aecom.com/contact-us/)
-- [LinkedIn](https://www.linkedin.com/company/aecom/)
+- [Aecom Domain Security](https://apis.io/security/aecom/aecom-domain-security/)
 
-## Features
+#### Plans and pricing (1)
 
-| Name | Description |
-|------|-------------|
-| Digital AECOM Platform | A suite of cloud-based SaaS solutions and digital tools that help clients accelerate their digital journeys and achieve better project outcomes in infrastructure delivery. |
-| PipeInsights | AI-powered sewer inspection analysis platform available on Microsoft Azure Marketplace that automates defect coding and generates infrastructure rehabilitation strategies. |
-| Program Management | Digital program management capabilities for large-scale infrastructure programs enabling real-time visibility into project portfolios, budgets, and schedules. |
-| Environmental Intelligence | Digital tools for environmental data collection, analysis, and reporting to support environmental impact assessments, remediation tracking, and sustainability reporting. |
-| Infrastructure Analytics | Data analytics and visualization tools for infrastructure asset management, helping clients make data-driven decisions about maintenance and capital investment. |
-| BIM and Digital Delivery | Building Information Modeling and digital project delivery tools integrated into engineering and design workflows across transportation, buildings, and water projects. |
+Published plans, tiers and prices.
 
-## Use Cases
+- [Aecom Plans Pricing](https://apis.io/plans/aecom/aecom-plans-pricing/)
 
-| Name | Description |
-|------|-------------|
-| Sewer System Asset Management | Use PipeInsights to automate sewer inspection defect coding, prioritize rehabilitation, and reduce costs for municipal water utilities. |
-| Transportation Infrastructure Planning | Digital planning and design tools supporting road, rail, airport, and transit infrastructure projects from concept through delivery. |
-| Environmental Remediation Management | Digital platforms for tracking environmental remediation programs including site characterization, contaminant monitoring, and regulatory compliance reporting. |
-| Water System Digital Twin | Creating digital representations of water and wastewater infrastructure for operational optimization, predictive maintenance, and resilience planning. |
-| Sustainable Infrastructure Reporting | Tools for measuring, reporting, and improving the sustainability performance of infrastructure projects and assets. |
+#### Rate limits (1)
 
-## Integrations
+Published request limits.
 
-| Name | Description |
-|------|-------------|
-| Microsoft Azure | AECOM Digital products including PipeInsights are available through the Microsoft Azure Marketplace for enterprise cloud deployment. |
-| Bentley Systems | Integration with Bentley infrastructure engineering software for BIM and digital delivery workflows. |
-| Autodesk | Integration with Autodesk design and construction platforms including Civil 3D, Revit, and BIM 360 for engineering project delivery. |
-| Esri ArcGIS | Integration with Esri GIS platforms for spatial data analysis, environmental mapping, and infrastructure asset management. |
+- [Aecom Rate Limits](https://apis.io/rate-limits/aecom/aecom-rate-limits/)
 
-## Solutions
+#### FinOps (1)
 
-| Name | Description |
-|------|-------------|
-| Transportation | End-to-end transportation infrastructure consulting for roads, bridges, railways, airports, and transit systems. |
-| Water | Water and wastewater engineering services including treatment, distribution, collection, and stormwater management with digital asset management tools. |
-| Environment | Environmental consulting, remediation, and restoration services with digital data management platforms. |
-| Buildings | Architecture, design, and engineering services for government, commercial, healthcare, and education facilities with BIM-based delivery. |
-| Energy | Energy transition consulting and infrastructure engineering for power generation, transmission, distribution, and renewable energy projects. |
+What the API costs to run, by operation.
 
-## Maintainers
+- [Aecom Finops](https://apis.io/finops/aecom/aecom-finops/)
 
-**FN:** API Evangelist
+## Where to find this API
 
-**Email:** info@apievangelist.com
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://aecom.com/)
+- [Documentation](https://aecom.com/services/)
+- [Blog](https://insights.aecom.com/)
+- [Terms of service](https://aecom.com/terms-use/)
+- [Privacy policy](https://aecom.com/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 20.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 14.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 21.1 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/aecom/](https://apis.io/providers/aecom/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for AECOM: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/aecom/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
